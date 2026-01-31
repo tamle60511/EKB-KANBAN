@@ -1,0 +1,33 @@
+server:
+  name: KanBan
+  port: 8080
+  env: development
+
+database:
+  host: localhost
+  port: 5432  
+  user: root
+  password: 123456
+  name: kanban
+  timeout: 10
+
+# Thêm cấu hình database ERP
+erp_database:
+  host: 192.168.0.200
+  port: 1433
+  user: sa
+  password: cqsVN~@#2026
+  name: CQS_VN_2025
+  timeout: 10
+
+jwt:
+  secret: your_jwt_secret_key
+  expiry_hour: 24
+
+excel:
+  download_path: public/downloads
+  max_search_months: 6
+
+logger:
+  level: info
+  path: logs/app.log
